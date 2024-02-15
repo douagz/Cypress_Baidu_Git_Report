@@ -1,0 +1,10 @@
+{
+    "searchPage":{
+        "input": "#kw",
+        "button": "#su"
+    },
+    "resultPage":{
+        "input": "#kw",
+        "button": "#su"
+    }
+}
