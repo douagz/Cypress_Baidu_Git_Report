@@ -63,4 +63,4 @@ jobs:
           parallel: false
           spec: |
             cypress/e2e/*
-            #cypress/tests/features/*
+
