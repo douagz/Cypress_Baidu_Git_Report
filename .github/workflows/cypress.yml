@@ -47,6 +47,11 @@ jobs:
       #    name: cypress-videos
       #    path: cypress-videos
       #    #working-directory: cypress
+
+      - name: "show current directory and files"
+        run: |
+          pwd
+          ls -al
           
       - name: "Cypress Tests using Chrome"
         uses: cypress-io/github-action@v6
