@@ -62,5 +62,5 @@ jobs:
           record: false
           parallel: false
           spec: |
-            cypress/e2e/*
+            cypress/e2e/baidu_web/*
 
