@@ -24,7 +24,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # Check submodules
       #- name: Check submodules
@@ -49,7 +49,7 @@ jobs:
       #    #working-directory: cypress
           
       - name: "Cypress Tests using Chrome"
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v6
         with:
           start: yarn start
           #working-directory: cypress
