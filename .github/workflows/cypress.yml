@@ -52,7 +52,8 @@ jobs:
         run: |
           pwd
           ls -al
-          
+      - name: "Install Cypress"
+        run: npm install cypress --save-dev
       - name: "Cypress test"
         run: npx cypress run
       #- name: "Cypress Tests using Chrome"
