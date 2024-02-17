@@ -52,10 +52,14 @@ jobs:
         run: |
           pwd
           ls -al
+          
       - name: "Install Cypress"
         run: npm install cypress --save-dev
+        
       - name: "Cypress test"
-        run: npx cypress run
+        uses: cypress-io/github-action@v2
+
+        
       #- name: "Cypress Tests using Chrome"
       #  uses: cypress-io/github-action@v6
       #  with:
