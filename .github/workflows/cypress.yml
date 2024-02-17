@@ -53,14 +53,16 @@ jobs:
           pwd
           ls -al
           
-      - name: "Cypress Tests using Chrome"
-        uses: cypress-io/github-action@v6
-        with:
-          start: yarn start
-          #working-directory: cypress
-          browser: chrome
-          record: false
-          parallel: false
-          spec: |
-            cypress/e2e/baidu_web/*
+      - name: "Cypress test"
+        run: npx cypress run
+      #- name: "Cypress Tests using Chrome"
+      #  uses: cypress-io/github-action@v6
+      #  with:
+      #    start: yarn start
+      #    #working-directory: cypress
+      #    browser: chrome
+      #    record: false
+      #    parallel: false
+      #    spec: |
+      #      cypress/e2e/baidu_web/*
 
