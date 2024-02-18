@@ -50,7 +50,7 @@ jobs:
 
       - name: "show current directory and files"
         run: |
-          pwd
+          pwd && mkdir screenshots && mkdir videos
           ls -al
           
       - name: "Install Cypress"
