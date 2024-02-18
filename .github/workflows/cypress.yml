@@ -26,10 +26,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      # Check submodules
-      #- name: Check submodules
-      #  run: git submodule update --init --recursive
-
       # Upload screenshots if failure
       - name: Upload screenshots if failure
         uses: actions/upload-artifact@v1
@@ -37,7 +33,6 @@ jobs:
         with:
           name: cypress-screenshots
           path: cypress-screenshots
-      #    #working-directory: cypress
 
       # Upload videos if failure
       - name: Upload videos if failure
@@ -46,7 +41,6 @@ jobs:
         with:
           name: cypress-videos
           path: cypress-videos
-      #    #working-directory: cypress
 
       - name: "show current directory and files"
         run: |
@@ -59,15 +53,4 @@ jobs:
       - name: "Cypress test"
         run: npx cypress run
 
-        
-      #- name: "Cypress Tests using Chrome"
-      #  uses: cypress-io/github-action@v6
-      #  with:
-      #    start: yarn start
-      #    #working-directory: cypress
-      #    browser: chrome
-      #    record: false
-      #    parallel: false
-      #    spec: |
-      #      cypress/e2e/baidu_web/*
 
